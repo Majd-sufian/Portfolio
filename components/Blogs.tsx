@@ -37,16 +37,24 @@ const Blogs: React.FC<{}> = ({}) => {
         <div className="blogs__card">
           <img src="gif/google.gif" />
           <div className="blogs__card-infos">
-            <h1 className="alexxandria-anim">
-              Google is your best friend, so use it like a pro
-            </h1>
+            <h1>Google is your best friend, so use it like a pro</h1>
             <p>
               Googling is one of the most important skills for every developer,
               so let Let me show you how to get better at Googling to get faster
               results
             </p>
             <div className="blogs__button">
-              <button className="btn-hover color-7">READ MORE</button>
+              <button
+                className="btn-hover color-7"
+                onClick={() =>
+                  window.open(
+                    "https://dev.to/majdsufian/google-is-your-best-friend-so-use-it-like-a-pro-1o88",
+                    "_blank"
+                  )
+                }
+              >
+                READ MORE
+              </button>
             </div>
           </div>
         </div>

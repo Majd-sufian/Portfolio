@@ -8,12 +8,12 @@ Tech stack:
 - Typescript
 - React
 - Sass/Scss
-- Former Notion
+- Framer Notion
 - hover-effects
 
 ### [Live Site]()
 
-![Personal Portfolio](png/portfolio.png)
+![Personal Portfolio](https://github.com/Majd-sufian/Portfolio/blob/main/public/png/portfolio.png?raw=true)
 
 ## Scripts:
 
