@@ -4,14 +4,12 @@ import {
   Banner,
   Blogs,
   Contact,
-  Footer,
-  // MotionDiv,
+  MotionDiv,
   PortfolioHead,
   Projects,
   Navigation,
   Skills,
 } from "../components";
-//TODO: update tags
 
 const locomotiveScroll =
   typeof window !== `undefined` ? require("locomotive-scroll").default : null;
@@ -60,15 +58,9 @@ const index: React.FC<{}> = ({}) => {
       }
     );
 
-    // header cursor
-    const cursor = document.querySelector(".cursor");
-    window.onmousemove = (e: any) => {
-      cursor!.setAttribute("style", `top: ${e.pageY}px; left: ${e.pageX}px;`);
-    };
-
     console.clear();
     console.log.apply(console, [
-      "%c Designed and Developed by Adeola Adeoti %c %c🚀 %c\n",
+      "%c Designed and Developed by Majd %c %c🚀 %c\n",
       "color: #fff; background: #8000ff; padding:5px 0;",
       "color: #fff; background: #242424; padding:5px 0 5px 5px;",
       "background: #242424; padding:5px 0",
@@ -84,11 +76,10 @@ const index: React.FC<{}> = ({}) => {
     <>
       <div id="menu-target" data-scroll-container ref={refScroll}>
         <PortfolioHead />
-        {/* <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
+        <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
           <source src="sound/preloader.mp3" type="audio/mp3" />
-        </audio> */}
-        <div className="cursor"></div>
-        {/* <MotionDiv /> */}
+        </audio>
+        <MotionDiv />
         <Navigation />
         <Banner />
         <Skills />
@@ -98,7 +89,6 @@ const index: React.FC<{}> = ({}) => {
           <Blogs />
           <Contact />
         </main>
-        <Footer />
       </div>
     </>
   );

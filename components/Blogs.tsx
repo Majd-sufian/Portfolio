@@ -26,7 +26,14 @@ const Blogs: React.FC<{}> = ({}) => {
           <span>Some Of My Latest Blogs</span>
         </h1>
       </div>
-      <div className="blogs__cards">
+      <div
+        className="blogs__cards"
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <div className="blogs__card">
           <img src="gif/google.gif" />
           <div className="blogs__card-infos">

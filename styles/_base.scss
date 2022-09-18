@@ -56,6 +56,9 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #10101a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;

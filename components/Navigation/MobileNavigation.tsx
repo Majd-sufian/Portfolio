@@ -41,7 +41,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
         <div className="navigation-top__right">
           <h4 className="navigation-h4">HAVE AN IDEA?</h4>
           <a
-            href="majdnewsufian@gmail.com"
+            href="mailto: majdnewsufian@gmail.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >

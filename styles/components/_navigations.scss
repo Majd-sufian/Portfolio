@@ -143,11 +143,8 @@
       display: inline-block;
       font-family: $font-secondary;
       text-decoration: none;
-      color: var(--color-white);
       transition: all 0.3s ease-in-out;
-      &:hover {
-        color: var(--color-light-purple);
-      }
+      color: var(--color-light-purple);
     }
   }
 }

@@ -11,13 +11,14 @@ const MotionDiv: React.FC<{}> = ({}) => {
       className="preloader"
     >
       <div className="preloader__wrapper">
-        <motion.div
+        {/* TODO: add logovar(--color-light-purple) */}
+        {/* <motion.div
           initial={{ x: -10, opacity: 0 }}
           animate={{ x: 0, opacity: 1, transition: { ...transition } }}
           className="preloader__left"
         >
-          <img src="svg/adeola-logo-left.svg" alt="adeola logo" />
-        </motion.div>
+          <img src="" alt="adeola logo" />
+        </motion.div> */}
         <motion.div
           initial={{ x: 10, opacity: 0 }}
           animate={{ x: 0, opacity: 1, transition: { ...transition } }}

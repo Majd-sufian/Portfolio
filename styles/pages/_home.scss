@@ -559,7 +559,7 @@
       flex-direction: column;
       gap: 2rem;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: flex-start;
     }
 
     .blogs__card-infos .blogs__card-user {
@@ -662,6 +662,7 @@
   grid-column: 2/14;
   padding: 0 6rem;
   margin-top: 12rem;
+  margin-bottom: 8rem;
 
   @media only screen and (max-width: 57em) {
     grid-column: 1/15;
@@ -696,23 +697,6 @@
     &:hover {
       color: var(--color-white);
     }
-  }
-}
-
-.footer {
-  @include centerContent;
-  width: 100%;
-  margin-top: 12rem;
-  padding: 3rem 6rem;
-  border-top: 1px solid rgba(#c4c4c4, 0.25);
-
-  @media only screen and (max-width: 45em) {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-  &__socials {
-    @include centerContent;
-    width: 6rem;
   }
 }
 
