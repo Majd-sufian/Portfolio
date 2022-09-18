@@ -11,6 +11,7 @@ import {
   Navigation,
   Skills,
 } from "../components";
+//TODO: update tags
 
 const locomotiveScroll =
   typeof window !== `undefined` ? require("locomotive-scroll").default : null;

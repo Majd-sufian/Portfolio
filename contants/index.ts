@@ -150,6 +150,34 @@ const transition: { duration: number; ease: number[] } = {
   ease: [0.6, 0.01, -0.05, 0.9],
 };
 
+const tags: string[] = [
+  "REACT",
+  "TYPESCRIPT",
+  "NODEJS",
+  "EXPRESS",
+  "FIGMA",
+  "GIT",
+  "NETLIFY",
+  "AWS",
+  "PYTHON",
+  "REDUX",
+  "FIREBASE",
+  "IONIC",
+  "HTLM",
+  "CSS",
+  "SASS",
+  "VS CODE",
+  "GITHUB",
+  "CONTEXT API",
+  "TAILWIND",
+  "MATERIAL UI",
+  "REACT NATIVE",
+  "RUBY",
+  "VITE",
+  "NEXT.JS",
+  "FRAMER NOTION",
+];
+
 export {
   projects,
   featuredProjects,
@@ -160,4 +188,5 @@ export {
   variants,
   socialLinks,
   transition,
+  tags,
 };

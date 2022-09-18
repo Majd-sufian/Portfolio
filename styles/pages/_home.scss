@@ -164,11 +164,15 @@
 
   .tag-cloud {
     cursor: pointer;
-    // margin-top: 100px;
+    width: 100% !important;
     position: relative;
   }
 
   .tag-cloud__item {
+    background: url(https://images.unsplash.com/photo-1552084117-56a987666449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60)
+      repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
     font-weight: 900;
     left: 50%;
     position: absolute;
@@ -622,6 +626,7 @@
     gap: 2rem;
     flex-wrap: wrap;
     max-width: 40rem;
+    justify-content: flex-start;
   }
   a {
     @include centerContent;

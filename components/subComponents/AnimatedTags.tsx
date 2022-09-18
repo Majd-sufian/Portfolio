@@ -1,40 +1,15 @@
 import { memo, useRef, useState, useCallback, useEffect } from "react";
-
-const texts: string[] = [
-  "React",
-  "GraphQL",
-  "TypeScript",
-  "Prisma",
-  "Apollo",
-  "NodeJS",
-  "Express",
-  "JWT",
-  "Figma",
-  "Git",
-  "Netlify",
-  "Heroku",
-  "Angular",
-  "SSR",
-  "_Lodash",
-  "Python",
-  "Redux",
-  "REST",
-  "Cloudinary",
-  "Firebase",
-  "SCSS",
-  "TDD",
-  "Ionic",
-];
+import { tags } from "../../contants";
 
 const computePosition = (
   idx: number,
   random: boolean = false,
   size: number
 ) => {
-  if (random) idx = Math.floor(Math.random() * (texts.length + 1));
+  if (random) idx = Math.floor(Math.random() * (tags.length + 1));
 
-  const phi = Math.acos(-1 + (2 * idx + 1) / texts.length);
-  const theta = Math.sqrt((texts.length + 1) * Math.PI) * phi;
+  const phi = Math.acos(-1 + (2 * idx + 1) / tags.length);
+  const theta = Math.sqrt((tags.length + 1) * Math.PI) * phi;
 
   return {
     x: (size * Math.cos(theta) * Math.sin(phi)) / 2,
@@ -71,7 +46,7 @@ interface ItemProps {
 }
 
 const createInitialState = (size: number) => {
-  return texts.map((text, i) => {
+  return tags.map((text, i) => {
     return createTag(i, text, size);
   });
 };
