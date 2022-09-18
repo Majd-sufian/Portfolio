@@ -1,4 +1,6 @@
 import { Project } from "../../types/global";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 interface ProjectCardProps {
   project: Project;
@@ -15,8 +17,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     description,
   }: Project = project;
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="project-card">
+    <div
+      ref={ref}
+      style={{
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      }}
+      className="project-card"
+    >
       <div
         className="project-card__left"
         data-displacement="webp/myDistorsionImage.webp"
