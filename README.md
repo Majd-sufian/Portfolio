@@ -11,7 +11,7 @@ Tech stack:
 - Framer Notion
 - hover-effects
 
-### [Live Site]()
+### [Live Site](https://www.majd-sufyan.site/)
 
 ![Personal Portfolio](https://github.com/Majd-sufian/Portfolio/blob/main/public/png/portfolio.png?raw=true)
 
