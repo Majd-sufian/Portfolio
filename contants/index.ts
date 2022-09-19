@@ -64,6 +64,28 @@ const projects: Array<Project> = [
       github: "https://github.com/Majd-sufian/netflix-clone-v2",
     },
   },
+  {
+    firstName: "WYR Game",
+    secondName: "",
+    tectStack: "REACT - REDUX -  FIGMA",
+    description:
+      "WYR is an app that lets users play the “Would You Rather?” game.",
+    media: {
+      firstImage: {
+        img: "png/wyr.png",
+        alt: "Would You Rather game",
+      },
+      secondImage: {
+        img: "png/wyr2.png",
+        alt: "Would You Rather game",
+      },
+    },
+    dataScrollClass: "safarika-anim",
+    social: {
+      link: "https://would-you-rather-majd-sufyan.netlify.app",
+      github: "https://github.com/Majd-sufian/netflix-clone-v2",
+    },
+  },
 ];
 
 const featuredProjects = [
