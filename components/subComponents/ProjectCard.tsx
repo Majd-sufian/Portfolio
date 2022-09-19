@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <a
           rel="noopener"
           target="_blank"
-          href="https://alexxandria.vercel.app/"
+          href={social.link}
           className="project-card__link"
         >
           VISIT THE WEBSITE
