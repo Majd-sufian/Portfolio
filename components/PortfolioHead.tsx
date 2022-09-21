@@ -18,7 +18,7 @@ const PortfolioHead: React.FC<{}> = ({}) => {
         content="Majd Sufyan 🚀 &mdash; Frontend Software Devloper"
       />
       {/* TODO: CHANGE content url */}
-      <meta property="og:url" content="/" />
+      <meta property="og:url" content="majd-sufyan.site" />
       <meta property="og:image" content="webp/preview-image.png" />
       <meta
         property="og:description"
