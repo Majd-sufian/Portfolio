@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { blogs } from "../contants";
 
 const Blogs: React.FC<{}> = ({}) => {
   const ref = useRef(null);
@@ -34,30 +35,27 @@ const Blogs: React.FC<{}> = ({}) => {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <div className="blogs__card">
-          <img src="gif/google.gif" />
-          <div className="blogs__card-infos">
-            <h1>Google is your best friend, so use it like a pro</h1>
-            <p>
-              Googling is one of the most important skills for every developer,
-              so let Let me show you how to get better at Googling to get faster
-              results
-            </p>
-            <div className="blogs__button">
-              <button
-                className="btn-hover color-7"
-                onClick={() =>
-                  window.open(
-                    "https://dev.to/majdsufian/google-is-your-best-friend-so-use-it-like-a-pro-1o88",
-                    "_blank"
-                  )
-                }
-              >
-                READ MORE
-              </button>
+        {blogs.map(({ title, description, img, link }) => (
+          <div className="blogs__card">
+            <img src={img} />
+            <div className="blogs__card-infos">
+              <h1>{title}</h1>
+              <p>
+                {description}
+                <div className="blogs__button">
+                  <button
+                    className="btn-hover color-7"
+                    onClick={(): void => {
+                      window.open(link, "_blank");
+                    }}
+                  >
+                    READ MORE
+                  </button>
+                </div>
+              </p>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import { Project } from "../types/global";
+import { Project, Blogs } from "../types/global";
 
 const projects: Array<Project> = [
   {
@@ -85,6 +85,30 @@ const projects: Array<Project> = [
       link: "https://would-you-rather-majd-sufyan.netlify.app",
       github: "https://github.com/Majd-sufian/netflix-clone-v2",
     },
+  },
+];
+
+const blogs: Array<Blogs> = [
+  {
+    title: "Google is your best friend, so use it like a pro",
+    description:
+      "Googling is one of the most important skills for every developer,so let Let me show you how to get better at Googling to get faster results",
+    link: "https://dev.to/majdsufian/google-is-your-best-friend-so-use-it-like-a-pro-1o88",
+    img: "gif/google.gif",
+  },
+  {
+    title: "One Tool to view your Json better 👨‍💻",
+    description:
+      "𝐉𝐬𝐨𝐧𝐂𝐫𝐚𝐜𝐤 generates graph diagrams from JSON files and makes them easy to read. Additionally, the generated diagrams can be downloaded as images.",
+    link: "https://medium.com/@majdnewsufian/one-tool-to-view-your-json-better-1cce7b3633c3",
+    img: "png/json.png",
+  },
+  {
+    title: "One tool can save time when googling ⏲",
+    description:
+      "Whenever you search online for anything related to programming, if it has an answer to your search, it displays snippets of code or information based on what you have searched.",
+    link: "https://medium.com/@majdnewsufian/one-tool-can-save-time-when-googling-2366062430a6",
+    img: "png/grepper.png",
   },
 ];
 
@@ -211,4 +235,5 @@ export {
   socialLinks,
   transition,
   tags,
+  blogs,
 };

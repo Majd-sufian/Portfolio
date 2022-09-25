@@ -19,3 +19,10 @@ export interface Project {
     github: string;
   };
 }
+
+export interface Blogs {
+  title: string;
+  description: string;
+  link: string;
+  img: string;
+}
