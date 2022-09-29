@@ -8,14 +8,15 @@ const Banner: React.FC<{}> = ({}) => {
         <div className="header__hero">
           <div className="header__hero--heading">
             <span>
-              Turning <span className="animated-text">fantisy ideas</span> into{" "}
+              Turning{" "}
+              <span className="animated-text banner">fantisy ideas</span> into{" "}
             </span>
             <br />
             <span>real life </span>
-            <span className="animated-text">products </span>
+            <span className="animated-text banner">products </span>
             <br />
             <span>
-              is my <span className="animated-text">calling.</span>{" "}
+              is my <span className="animated-text banner">calling.</span>{" "}
             </span>
           </div>
           <a

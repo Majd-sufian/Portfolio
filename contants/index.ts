@@ -2,6 +2,49 @@ import { Project, Blogs } from "../types/global";
 
 const projects: Array<Project> = [
   {
+    firstName: "NFT Market Place",
+    secondName: "",
+    tectStack: "React NATIVE - REACT JS - TYPESCRIPT - TAILWIND - EXPO",
+    description:
+      "Created a mobile app (Android & IOS) with React Native and a showcase landing page with Typescript & React for the NFT marketplace.",
+    media: {
+      firstImage: {
+        img: "png/Nft.png",
+        alt: "Nft clone",
+      },
+      secondImage: {
+        img: "png/Nft2.png",
+        alt: "Nft",
+      },
+    },
+    dataScrollClass: "safarika-anim",
+    social: {
+      link: "https://nft-markeplace.netlify.app/",
+      github: "https://github.com/Majd-sufian/netflix-clone-v2",
+    },
+  },
+  {
+    firstName: "Modern Youtube clone",
+    secondName: "",
+    tectStack: "REACT JS - TYPESCRIPT - MATERIAL UI - RAPID API",
+    description: "",
+    media: {
+      firstImage: {
+        img: "png/youtube2.png",
+        alt: "Youtube clone",
+      },
+      secondImage: {
+        img: "png/youtube.png",
+        alt: "Youtube",
+      },
+    },
+    dataScrollClass: "safarika-anim",
+    social: {
+      link: "https://netflix-clone-v2-umber.vercel.app/",
+      github: "https://github.com/Majd-sufian/Modern-Youtube-Clone",
+    },
+  },
+  {
     firstName: "HooBank",
     secondName: "",
     description: "A simple landing page for HooBank.",
@@ -9,11 +52,11 @@ const projects: Array<Project> = [
     media: {
       firstImage: {
         img: "png/hoo2.png",
-        alt: "alexxandria model",
+        alt: "Hoobank",
       },
       secondImage: {
         img: "png/hoo.png",
-        alt: "alexxandria logo",
+        alt: "Hoobank",
       },
     },
     dataScrollClass: "alexxandria-anim",
@@ -30,11 +73,11 @@ const projects: Array<Project> = [
     media: {
       firstImage: {
         img: "png/news-reader-ai.png",
-        alt: "heatrow",
+        alt: "news reader",
       },
       secondImage: {
         img: "png/news-reader-ai-2.png",
-        alt: "heatrow logo",
+        alt: "news reader",
       },
     },
     dataScrollClass: "heatrow-anim",
@@ -44,18 +87,18 @@ const projects: Array<Project> = [
     },
   },
   {
-    firstName: "Netflix clone",
+    firstName: "Modern Netflix clone",
     secondName: "",
     tectStack: "NEXT JS - TYPESCRIPT - REACT - TAILWIND - MOVIE DB API",
     description: "",
     media: {
       firstImage: {
         img: "png/netflix.png",
-        alt: "safarika",
+        alt: "netflix",
       },
       secondImage: {
         img: "png/netflix2.png",
-        alt: "safarika logo",
+        alt: "netflix logo",
       },
     },
     dataScrollClass: "safarika-anim",

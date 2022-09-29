@@ -49,9 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <br /> {secondName}
         </h2>
         <div className="description">{description}</div>
-        <span className="animated-text">{tectStack}</span>
-        {/* <div className="project-card__description">
-        </div> */}
+        <span className="animated-text tools">{tectStack}</span>
         <a
           rel="noopener"
           target="_blank"
