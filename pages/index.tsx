@@ -8,7 +8,7 @@ import {
   PortfolioHead,
   Projects,
   Navigation,
-  Skills,
+  // Skills,
 } from "../components";
 
 const locomotiveScroll =
@@ -82,7 +82,6 @@ const index: React.FC<{}> = ({}) => {
         <MotionDiv />
         <Navigation />
         <Banner />
-        <Skills />
         <main className="container">
           <AboutMe />
           <Projects />

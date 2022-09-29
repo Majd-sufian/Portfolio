@@ -151,7 +151,7 @@ const AnimatedTags: React.FC = memo(() => {
         return (
           <span
             key={item.idx}
-            className="tag-cloud__item animt animated-text"
+            className="tag-cloud__item tags animt animated-text"
             ref={item.tagRef}
             style={{
               filter: item.filter,

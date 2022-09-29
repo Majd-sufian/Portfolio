@@ -148,7 +148,7 @@
 
   /* Animate Background Image */
   -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
+  -webkit-animation: aitf 50s linear infinite !important;
 
   /* Activate hardware acceleration for smoother animations */
   -webkit-transform: translate3d(0, 0, 0);
@@ -165,7 +165,7 @@
 }
 
 .banner {
-  background: url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+  background: url(https://github.com/Majd-sufian/Portfolio/blob/main/public/png/background.png?raw=true)
     repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
@@ -173,6 +173,14 @@
 
 .tools {
   background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.tags {
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  // background: url(https://images.unsplash.com/photo-1533511627347-4d1b893e1ad9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2179&q=80)
+  //   repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
 }
