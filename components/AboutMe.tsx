@@ -15,9 +15,9 @@ const AboutMe: React.FC<{}> = ({}) => {
       }}
       className="about-text"
     >
-      Hello stranger! 👋, my name is Majd and I am a frontend software
-      developer, <br /> passionate about digital products that help people
-      experience everyday life, not endure it.
+      Hello stranger! 👋, my name is Majd and I am a software developer, <br />{" "}
+      passionate about digital products that help people experience everyday
+      life, not endure it.
       <br /> I love building beautiful interfaces, web apps, mobile apps, and
       everything in between!{" "}
       <span className={`rocket ${isInView && "animateRocket"}`}>🚀</span>
