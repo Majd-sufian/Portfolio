@@ -10,6 +10,9 @@ import {
   Navigation,
   // Skills,
 } from "../components";
+import ReactGA from "react-ga";
+
+ReactGA.initialize("G-64EDG7SVW4");
 
 const locomotiveScroll =
   typeof window !== `undefined` ? require("locomotive-scroll").default : null;
@@ -22,6 +25,9 @@ const index: React.FC<{}> = ({}) => {
   let lscroll: any;
 
   useEffect(() => {
+    // Googel Analytics
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     if (!refScroll.current) return;
     // @ts-ignore
     lscroll = new locomotiveScroll({

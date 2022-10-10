@@ -19,7 +19,10 @@ const PortfolioHead: React.FC<{}> = ({}) => {
       />
       {/* TODO: CHANGE content url */}
       <meta property="og:url" content="majd-sufyan.site" />
-      <meta property="og:image" content="webp/preview-image.png" />
+      <meta
+        property="og:image"
+        content="https://github.com/Majd-sufian/Portfolio/blob/main/public/png/portfolio.png?raw=true"
+      />
       <meta
         property="og:description"
         content="I'm a Front End Software Developer and turning fantisy ideas into real life products is my calling."
@@ -32,8 +35,6 @@ const PortfolioHead: React.FC<{}> = ({}) => {
         name="twitter:description"
         content="I'm a Front End Software Developer and turning fantisy ideas into real life products is my calling."
       />
-      <meta name="twitter:image" content="webp/preview-image.png" />
-      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content="/" />
     </Head>
   );
