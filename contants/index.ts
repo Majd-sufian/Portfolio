@@ -4,7 +4,7 @@ const projects: Array<Project> = [
   {
     firstName: "NFT Market Place",
     secondName: "",
-    tectStack: "React NATIVE - REACT JS - TYPESCRIPT - TAILWIND - EXPO",
+    tectStack: "REACT NATIVE - REACT JS - TYPESCRIPT - TAILWIND - EXPO",
     description:
       "Created a mobile app (Android & IOS) with React Native and a showcase landing page with Typescript & React for the NFT marketplace.",
     media: {
@@ -230,7 +230,19 @@ const socialLinks = [
     icon: "💼 ",
     name: "LD",
     fullName: "LINKEDIN",
-    link: "/https://www.linkedin.com/in/majd-sufyan/",
+    link: "https://www.linkedin.com/in/majd-sufyan/",
+  },
+  {
+    icon: "✍️ ",
+    name: "HN",
+    fullName: "HASHNODE",
+    link: "https://majd-sufyan.hashnode.dev/",
+  },
+  {
+    icon: "👨‍💻 ",
+    name: "CP",
+    fullName: "CODEPEN",
+    link: "https://codepen.io/majd-sufian",
   },
 ];
 

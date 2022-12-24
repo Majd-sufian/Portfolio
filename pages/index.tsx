@@ -8,11 +8,8 @@ import {
   PortfolioHead,
   Projects,
   Navigation,
-  // Skills,
+  Tweets,
 } from "../components";
-import ReactGA from "react-ga";
-
-ReactGA.initialize("G-64EDG7SVW4");
 
 const locomotiveScroll =
   typeof window !== `undefined` ? require("locomotive-scroll").default : null;
@@ -25,11 +22,8 @@ const index: React.FC<{}> = ({}) => {
   let lscroll: any;
 
   useEffect(() => {
-    // Googel Analytics
-    ReactGA.pageview(window.location.pathname + window.location.search);
-
     if (!refScroll.current) return;
-    // @ts-ignore
+
     lscroll = new locomotiveScroll({
       el: refScroll.current,
       smooth: true,
@@ -41,7 +35,6 @@ const index: React.FC<{}> = ({}) => {
     // update locomotive scroll
     window.addEventListener("load", () => {
       let image = document.querySelector("img");
-      // @ts-ignore
       const isLoaded = image!.complete && image!.naturalHeight !== 0;
       lscroll.update();
     });
@@ -49,6 +42,7 @@ const index: React.FC<{}> = ({}) => {
     // image hover effect
     Array.from(document.querySelectorAll(".project-card__left")).forEach(
       (el: any) => {
+        console.log("here");
         const imgs: any = Array.from(el.querySelectorAll("img"));
         new hoverEffect({
           parent: el,
@@ -86,12 +80,13 @@ const index: React.FC<{}> = ({}) => {
           <source src="sound/preloader.mp3" type="audio/mp3" />
         </audio>
         <MotionDiv />
-        <Navigation />
+        {/* <Navigation /> */}
         <Banner />
         <main className="container">
           <AboutMe />
           <Projects />
           <Blogs />
+          <Tweets />
           <Contact />
         </main>
       </div>

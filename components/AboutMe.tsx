@@ -20,7 +20,6 @@ const AboutMe: React.FC<{}> = ({}) => {
       life, not endure it.
       <br /> I love building beautiful interfaces, web apps, mobile apps, and
       everything in between!{" "}
-      <span className={`rocket ${isInView && "animateRocket"}`}>🚀</span>
     </p>
   );
 };

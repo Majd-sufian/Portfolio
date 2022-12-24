@@ -27,6 +27,7 @@ const Blogs: React.FC<{}> = ({}) => {
           <span>Some Of My Latest Blogs</span>
         </h1>
       </div>
+
       <div
         className="blogs__cards"
         style={{
@@ -36,23 +37,44 @@ const Blogs: React.FC<{}> = ({}) => {
         }}
       >
         {blogs.map(({ title, description, img, link }) => (
-          <div className="blogs__card">
-            <img src={img} />
-            <div className="blogs__card-infos">
-              <h1>{title}</h1>
-              <p>
-                {description}
-                <div className="blogs__button">
-                  <button
-                    className="btn-hover color-7"
-                    onClick={(): void => {
-                      window.open(link, "_blank");
-                    }}
-                  >
-                    READ MORE
-                  </button>
-                </div>
-              </p>
+          <div className="card">
+            <div className="card__header">
+              <img src={img} alt="card__image" className="card__image" />
+            </div>
+            <div className="card__body">
+              <h4>{title}</h4>
+              <p>{description}</p>
+            </div>
+            <div className="card__button">
+              <button
+                className="btn-hover color-7"
+                onClick={(): void => {
+                  window.open(link, "_blank");
+                }}
+              >
+                READ MORE
+              </button>
+            </div>
+          </div>
+        ))}
+        {blogs.map(({ title, description, img, link }) => (
+          <div className="card">
+            <div className="card__header">
+              <img src={img} alt="card__image" className="card__image" />
+            </div>
+            <div className="card__body">
+              <h4>{title}</h4>
+              <p>{description}</p>
+            </div>
+            <div className="card__button">
+              <button
+                className="btn-hover color-7"
+                onClick={(): void => {
+                  window.open(link, "_blank");
+                }}
+              >
+                READ MORE
+              </button>
             </div>
           </div>
         ))}

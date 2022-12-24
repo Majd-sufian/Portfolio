@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Project } from "../../types/global";
 import { useRef } from "react";
 import { useInView } from "framer-motion";

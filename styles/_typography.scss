@@ -164,18 +164,35 @@
   }
 }
 
-.banner {
-  background: url(https://github.com/Majd-sufian/Portfolio/blob/main/public/png/background.png?raw=true)
-    repeat-y;
+.header__hero--heading-gradient,
+.tools {
+  font-weight: 900;
+  background: linear-gradient(
+    -45deg,
+    var(--color-light-blue),
+    var(--color-light-purple),
+    var(--color-light-blue),
+    var(--color-light-purple)
+  );
   -webkit-background-clip: text;
-  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 3s ease infinite;
+  animation: gradient 3s ease infinite;
 }
 
-.tools {
-  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+// .banner {
+//   background: url(https://github.com/Majd-sufian/Portfolio/blob/main/public/png/background.png?raw=true)
+//     repeat-y;
+//   -webkit-background-clip: text;
+//   background-clip: text;
+// }
+
+// .tools {
+//   background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+//   -webkit-background-clip: text;
+//   background-clip: text;
+// }
 
 .tags {
   background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
