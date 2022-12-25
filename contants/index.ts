@@ -1,6 +1,7 @@
 import { Project, Blogs } from "../types/global";
 
 const projects: Array<Project> = [
+  // NFT
   {
     firstName: "NFT Market Place",
     secondName: "",
@@ -20,51 +21,94 @@ const projects: Array<Project> = [
     dataScrollClass: "safarika-anim",
     social: {
       link: "https://nft-markeplace.netlify.app/",
-      github: "https://github.com/Majd-sufian/netflix-clone-v2",
+      github: "https://github.com/Majd-sufian/NFT-market-landing-page",
     },
   },
+  // Circle
   {
-    firstName: "Modern Youtube clone",
+    firstName: "Circle Branding Agency",
     secondName: "",
-    tectStack: "REACT JS - TYPESCRIPT - MATERIAL UI - RAPID API",
+    tectStack: "WORDPRESS",
     description: "",
+    // "Created a mobile app (Android & IOS) with React Native and a showcase landing page with Typescript & React for the NFT marketplace.",
     media: {
       firstImage: {
-        img: "png/youtube2.png",
-        alt: "Youtube clone",
-      },
-      secondImage: {
-        img: "png/youtube.png",
-        alt: "Youtube",
+        img: "png/circleLogo.png",
+        alt: "Circle LOGO",
       },
     },
     dataScrollClass: "safarika-anim",
     social: {
-      link: "https://netflix-clone-v2-umber.vercel.app/",
-      github: "https://github.com/Majd-sufian/Modern-Youtube-Clone",
+      link: "https://circlexpr.com/",
     },
   },
+  // Conventic
+  {
+    firstName: "CONVENTIC.COM",
+    secondName: "",
+    tectStack: "GASTBY JS - REACT JS - TYPESCRIPT - EMOTION",
+    description: "",
+    // "Created a mobile app (Android & IOS) with React Native and a showcase landing page with Typescript & React for the NFT marketplace.",
+    media: {
+      firstImage: {
+        img: "png/conventicLogo2.png",
+        alt: "conventicLogo",
+      },
+      secondImage: {
+        img: "png/conventicLogo.png",
+        alt: "conventicLogo",
+      },
+    },
+    dataScrollClass: "safarika-anim",
+    social: {
+      link: "https://www.conventic.com/",
+    },
+  },
+  // HOOBank
   {
     firstName: "HooBank",
     secondName: "",
-    description: "A simple landing page for HooBank.",
+    description: "Landing page for HooBank.",
     tectStack: "TYPESCRIPT - REACT - TAILWIND",
     media: {
       firstImage: {
-        img: "png/hoo2.png",
+        img: "svg/hooBankLogo.svg",
         alt: "Hoobank",
       },
       secondImage: {
-        img: "png/hoo.png",
+        img: "png/hoo2.png",
         alt: "Hoobank",
       },
     },
     dataScrollClass: "alexxandria-anim",
     social: {
-      link: "https://hoobank-majd-sufyan.netlify.app/",
+      link: "https://hoobank2-page.netlify.app/",
       github: "https://github.com/Majd-sufian/HooBank",
     },
   },
+  // WYR
+  {
+    firstName: "WYR Game",
+    secondName: "",
+    tectStack: "REACT - REDUX -  FIGMA",
+    description:
+      "WYR is an app that lets users play the “Would You Rather?” game.",
+    media: {
+      firstImage: {
+        img: "png/WYRLogo2.png",
+        alt: "Would You Rather game",
+      },
+      secondImage: {
+        img: "png/wyr.png",
+        alt: "Would You Rather game",
+      },
+    },
+    dataScrollClass: "safarika-anim",
+    social: {
+      link: "https://would-you-rather-majd-sufyan.netlify.app",
+    },
+  },
+  // News
   {
     firstName: "News",
     secondName: "Reader Ai",
@@ -72,11 +116,11 @@ const projects: Array<Project> = [
     description: "A News app, controlled and navigated via voice.",
     media: {
       firstImage: {
-        img: "png/news-reader-ai.png",
+        img: "png/alan.png",
         alt: "news reader",
       },
       secondImage: {
-        img: "png/news-reader-ai-2.png",
+        img: "png/news-reader-ai.png",
         alt: "news reader",
       },
     },
@@ -86,6 +130,29 @@ const projects: Array<Project> = [
       github: "https://github.com/Majd-sufian/News-Reader-Ai",
     },
   },
+  // Youtube
+  {
+    firstName: "Modern Youtube clone",
+    secondName: "",
+    tectStack: "REACT JS - TYPESCRIPT - MATERIAL UI - RAPID API",
+    description: "",
+    media: {
+      firstImage: {
+        img: "png/youtubeLogo.png",
+        alt: "Youtube clone",
+      },
+      secondImage: {
+        img: "png/youtube.png",
+        alt: "Youtube",
+      },
+    },
+    dataScrollClass: "safarika-anim",
+    social: {
+      link: "https://youtube-clone-modern.netlify.app/",
+      github: "https://github.com/Majd-sufian/Modern-Youtube-Clone",
+    },
+  },
+  // Netflix
   {
     firstName: "Modern Netflix clone",
     secondName: "",
@@ -93,39 +160,17 @@ const projects: Array<Project> = [
     description: "",
     media: {
       firstImage: {
-        img: "png/netflix.png",
+        img: "png/NetflixLogo.png",
         alt: "netflix",
       },
       secondImage: {
-        img: "png/netflix2.png",
+        img: "png/netflix.png",
         alt: "netflix logo",
       },
     },
     dataScrollClass: "safarika-anim",
     social: {
       link: "https://netflix-clone-v2-umber.vercel.app/",
-      github: "https://github.com/Majd-sufian/netflix-clone-v2",
-    },
-  },
-  {
-    firstName: "WYR Game",
-    secondName: "",
-    tectStack: "REACT - REDUX -  FIGMA",
-    description:
-      "WYR is an app that lets users play the “Would You Rather?” game.",
-    media: {
-      firstImage: {
-        img: "png/wyr.png",
-        alt: "Would You Rather game",
-      },
-      secondImage: {
-        img: "png/wyr2.png",
-        alt: "Would You Rather game",
-      },
-    },
-    dataScrollClass: "safarika-anim",
-    social: {
-      link: "https://would-you-rather-majd-sufyan.netlify.app",
       github: "https://github.com/Majd-sufian/netflix-clone-v2",
     },
   },

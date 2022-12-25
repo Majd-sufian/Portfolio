@@ -57,27 +57,6 @@ const Blogs: React.FC<{}> = ({}) => {
             </div>
           </div>
         ))}
-        {blogs.map(({ title, description, img, link }) => (
-          <div className="card">
-            <div className="card__header">
-              <img src={img} alt="card__image" className="card__image" />
-            </div>
-            <div className="card__body">
-              <h4>{title}</h4>
-              <p>{description}</p>
-            </div>
-            <div className="card__button">
-              <button
-                className="btn-hover color-7"
-                onClick={(): void => {
-                  window.open(link, "_blank");
-                }}
-              >
-                READ MORE
-              </button>
-            </div>
-          </div>
-        ))}
       </div>
     </section>
   );

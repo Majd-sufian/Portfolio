@@ -5,7 +5,7 @@ export interface Project {
       img: string;
       alt: string;
     };
-    secondImage: {
+    secondImage?: {
       img: string;
       alt: string;
     };
@@ -16,7 +16,7 @@ export interface Project {
   secondName: string;
   social: {
     link: string;
-    github: string;
+    github?: string;
   };
 }
 

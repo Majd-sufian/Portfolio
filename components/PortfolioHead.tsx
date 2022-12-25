@@ -7,7 +7,7 @@ const PortfolioHead: React.FC<{}> = ({}) => {
       <link href="/" rel="canonical" />
       <meta name="theme-color" content="#10101A" />
       <meta name="apple-mobile-web-app-status-bar-style" content="#10101A" />
-      <title>Majd Sufyan 🚀 &mdash; Frontend Software Devloper</title>
+      <title>Majd Sufyan &mdash; Software Devloper</title>
       <meta
         name="description"
         content="I'm a Front End Software Developer and turning fantisy ideas into real life products is my calling."
@@ -15,7 +15,7 @@ const PortfolioHead: React.FC<{}> = ({}) => {
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
-        content="Majd Sufyan 🚀 &mdash; Frontend Software Devloper"
+        content="Majd Sufyan 🚀 &mdash; Software Devloper"
       />
       {/* TODO: CHANGE content url */}
       <meta property="og:url" content="majd-sufyan.site" />
@@ -29,7 +29,7 @@ const PortfolioHead: React.FC<{}> = ({}) => {
       />
       <meta
         name="twitter:title"
-        content="Majd Sufyan 🚀 &mdash; Frontend Software Devloper"
+        content="Majd Sufyan 🚀 &mdash; Software Devloper"
       />
       <meta
         name="twitter:description"

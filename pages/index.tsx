@@ -40,23 +40,23 @@ const index: React.FC<{}> = ({}) => {
     });
 
     // image hover effect
-    Array.from(document.querySelectorAll(".project-card__left")).forEach(
-      (el: any) => {
-        console.log("here");
-        const imgs: any = Array.from(el.querySelectorAll("img"));
-        new hoverEffect({
-          parent: el,
-          intensity: 0.2,
-          speedIn: el.dataset.speedin || undefined,
-          speedOut: el.dataset.speedout || undefined,
-          easing: el.dataset.easing || undefined,
-          hover: el.dataset.hover || undefined,
-          image1: imgs[0].getAttribute("src"),
-          image2: imgs[1].getAttribute("src"),
-          displacementImage: el.dataset.displacement,
-        });
-      }
-    );
+    // Array.from(document.querySelectorAll(".project-card__left")).forEach(
+    //   (el: any) => {
+    //     console.log("here");
+    //     const imgs: any = Array.from(el.querySelectorAll("img"));
+    //     new hoverEffect({
+    //       parent: el,
+    //       intensity: 0.2,
+    //       speedIn: el.dataset.speedin || undefined,
+    //       speedOut: el.dataset.speedout || undefined,
+    //       easing: el.dataset.easing || undefined,
+    //       hover: el.dataset.hover || undefined,
+    //       image1: imgs[0].getAttribute("src"),
+    //       image2: imgs[1].getAttribute("src"),
+    //       displacementImage: el.dataset.displacement,
+    //     });
+    //   }
+    // );
 
     console.clear();
     console.log.apply(console, [
@@ -80,7 +80,6 @@ const index: React.FC<{}> = ({}) => {
           <source src="sound/preloader.mp3" type="audio/mp3" />
         </audio>
         <MotionDiv />
-        {/* <Navigation /> */}
         <Banner />
         <main className="container">
           <AboutMe />

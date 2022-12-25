@@ -36,7 +36,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         data-displacement="webp/myDistorsionImage.webp"
       >
         <img src={media.firstImage.img} alt={media.firstImage.alt} />
-        <img src={media.secondImage.img} alt={media.secondImage.alt} />
+        {media.secondImage && (
+          <img src={media.secondImage.img} alt={media.secondImage.alt} />
+        )}
       </div>
       <div className="project-card__right">
         <h2
@@ -60,9 +62,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           VISIT THE WEBSITE
         </a>
         <div className="project-card__socials">
-          <a rel="noopener" target="_blank" href={social.github}>
-            <img src="svg/github.svg" alt="github icon" />
-          </a>
+          {social.github && (
+            <a rel="noopener" target="_blank" href={social.github}>
+              <img src="svg/github.svg" alt="github icon" />
+            </a>
+          )}
         </div>
       </div>
     </div>
