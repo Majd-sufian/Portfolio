@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { tweets } from "../contants";
-import { Ireply } from "../pages/api/tweets";
+import { Tweet } from "../types/global";
 
 const Tweets = () => {
   const reviews = useMemo(() => tweets, []);
@@ -24,7 +24,7 @@ const Tweets = () => {
         </div>
         <div className="section-reviews__bottom">
           <div className="section-reviews__bottom-wrapper review-card__anim1">
-            {reviews.map((review: Ireply) => (
+            {reviews.map((review: Tweet) => (
               <div key={review.id} className="review-card">
                 <div className="review-card__top">
                   <div className="review-card__top--left">
@@ -42,7 +42,7 @@ const Tweets = () => {
             ))}
           </div>
           <div className="section-reviews__bottom-wrapper review-card__anim2">
-            {reviews.sort().map((review: Ireply) => (
+            {reviews.sort().map((review: Tweet) => (
               <div key={review.id} className="review-card">
                 <div className="review-card__top">
                   <div className="review-card__top--left">

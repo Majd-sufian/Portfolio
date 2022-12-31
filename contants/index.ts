@@ -1,4 +1,4 @@
-import { Project, Blogs, Tweets } from "../types/global";
+import { Project, Blogs, Tweet } from "../types/global";
 
 const projects: Array<Project> = [
   // NFT
@@ -351,7 +351,7 @@ const tags: Array<string> = [
   "FRAMER NOTION",
 ];
 
-const tweets: Array<Tweets> = [
+const tweets: Array<Tweet> = [
   {
     id: 0,
     name: "Name cannot be blank",

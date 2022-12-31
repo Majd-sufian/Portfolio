@@ -20,7 +20,7 @@ export interface Project {
   };
 }
 
-export interface Tweets {
+export interface Tweet {
   id: number;
   name: string;
   userName: string;
