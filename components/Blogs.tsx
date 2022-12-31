@@ -36,24 +36,23 @@ const Blogs: React.FC<{}> = ({}) => {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        {blogs.map(({ title, description, img, link }) => (
+        {blogs.map(({ title, img, link }) => (
           <div className="card">
             <div className="card__header">
               <img src={img} alt="card__image" className="card__image" />
             </div>
             <div className="card__body">
-              <h4>{title}</h4>
-              <p>{description}</p>
-            </div>
-            <div className="card__button">
-              <button
-                className="btn-hover color-7"
-                onClick={(): void => {
-                  window.open(link, "_blank");
-                }}
-              >
-                READ MORE
-              </button>
+              <h4 className="blog__title">{title}</h4>
+              <div className="card__button">
+                <button
+                  className="btn-hover color-7"
+                  onClick={(): void => {
+                    window.open(link, "_blank");
+                  }}
+                >
+                  READ MORE
+                </button>
+              </div>
             </div>
           </div>
         ))}

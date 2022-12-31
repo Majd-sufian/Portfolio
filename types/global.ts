@@ -22,7 +22,7 @@ export interface Project {
 
 export interface Blogs {
   title: string;
-  description: string;
+  description?: string;
   link: string;
   img: string;
 }

@@ -7,15 +7,14 @@ import {
   MotionDiv,
   PortfolioHead,
   Projects,
-  Navigation,
   Tweets,
 } from "../components";
 
 const locomotiveScroll =
   typeof window !== `undefined` ? require("locomotive-scroll").default : null;
 
-const hoverEffect =
-  typeof window !== `undefined` ? require("hover-effect").default : null;
+// const hoverEffect =
+//   typeof window !== `undefined` ? require("hover-effect").default : null;
 
 const index: React.FC<{}> = ({}) => {
   const refScroll = useRef(null);
