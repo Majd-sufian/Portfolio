@@ -306,9 +306,9 @@ const socialLinks = [
   },
   {
     icon: "✍️ ",
-    name: "HN",
-    fullName: "HASHNODE",
-    link: "https://majd-sufyan.hashnode.dev/",
+    name: "DEV",
+    fullName: "DEV.TO",
+    link: "https://dev.to/majdsufian/react-cheatsheet-for-2023-14bd",
   },
   {
     icon: "👨‍💻 ",
