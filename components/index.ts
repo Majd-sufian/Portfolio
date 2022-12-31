@@ -1,15 +1,13 @@
-import { lazy } from "react";
-
-const PortfolioHead = lazy(() => import("./PortfolioHead"));
-const MotionDiv = lazy(() => import("./MotionDiv"));
-const Banner = lazy(() => import("./Banner"));
-const AboutMe = lazy(() => import("./AboutMe"));
-const Projects = lazy(() => import("./Projects"));
-const Blogs = lazy(() => import("./Blogs"));
-const Contact = lazy(() => import("./Contact"));
-const Navigation = lazy(() => import("./Navigation/Navigation"));
-const Skills = lazy(() => import("./Skills"));
-const Tweets = lazy(() => import("./Tweets"));
+import AboutMe from "./AboutMe";
+import Banner from "./Banner";
+import Blogs from "./Blogs";
+import Contact from "./Contact";
+import MotionDiv from "./MotionDiv";
+import Navigation from "./Navigation/Navigation";
+import PortfolioHead from "./PortfolioHead";
+import Projects from "./Projects";
+import Skills from "./Skills";
+import Tweets from "./Tweets";
 
 export {
   PortfolioHead,

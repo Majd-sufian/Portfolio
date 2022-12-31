@@ -20,6 +20,13 @@ export interface Project {
   };
 }
 
+export interface Tweets {
+  id: number;
+  name: string;
+  userName: string;
+  reply: string;
+}
+
 export interface Blogs {
   title: string;
   description?: string;

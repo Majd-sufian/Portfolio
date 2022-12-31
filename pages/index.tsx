@@ -1,4 +1,4 @@
-import { useRef, useEffect, Suspense } from "react";
+import { useRef, useEffect, Suspense, StrictMode } from "react";
 import {
   AboutMe,
   Banner,
@@ -73,23 +73,21 @@ const index: React.FC<{}> = ({}) => {
   }, []);
 
   return (
-    <Suspense fallback={"loading..."}>
-      <div id="menu-target" data-scroll-container ref={refScroll}>
-        <PortfolioHead />
-        <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
-          <source src="sound/preloader.mp3" type="audio/mp3" />
-        </audio>
-        <MotionDiv />
-        <Banner />
-        <main className="container">
-          <AboutMe />
-          <Projects />
-          <Blogs />
-          <Tweets />
-          <Contact />
-        </main>
-      </div>
-    </Suspense>
+    <div id="menu-target" data-scroll-container ref={refScroll}>
+      <PortfolioHead />
+      <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
+        <source src="sound/preloader.mp3" type="audio/mp3" />
+      </audio>
+      <MotionDiv />
+      <Banner />
+      <main className="container">
+        <AboutMe />
+        <Projects />
+        <Blogs />
+        <Tweets />
+        <Contact />
+      </main>
+    </div>
   );
 };
 
