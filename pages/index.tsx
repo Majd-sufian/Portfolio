@@ -34,6 +34,7 @@ const index: React.FC<{}> = ({}) => {
     // update locomotive scroll
     window.addEventListener("load", () => {
       let image = document.querySelector("img");
+      // @ts-ignore
       const isLoaded = image!.complete && image!.naturalHeight !== 0;
       lscroll.update();
     });
@@ -75,9 +76,9 @@ const index: React.FC<{}> = ({}) => {
     <Suspense fallback={"loading..."}>
       <div id="menu-target" data-scroll-container ref={refScroll}>
         <PortfolioHead />
-        {/* <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
+        <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
           <source src="sound/preloader.mp3" type="audio/mp3" />
-        </audio> */}
+        </audio>
         <MotionDiv />
         <Banner />
         <main className="container">
