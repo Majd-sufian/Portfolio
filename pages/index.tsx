@@ -1,4 +1,4 @@
-import { useRef, useEffect, Suspense, StrictMode } from "react";
+import { useRef, useEffect } from "react";
 import {
   AboutMe,
   Banner,
