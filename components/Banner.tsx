@@ -1,3 +1,4 @@
+// SubComponents
 import SocialMediaLinks from "./subComponents/SocialMediaLinks";
 import Speaker from "./subComponents/Speaker";
 

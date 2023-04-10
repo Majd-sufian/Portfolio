@@ -1,5 +1,12 @@
+// Motion Div
 import { motion } from "framer-motion";
-import { transition } from "../contants";
+
+// Contants
+import {
+  motionDivAnimation,
+  motionDivAnimation2,
+  motionDivTechStack,
+} from "../contants/MotionDivAnimation";
 
 const MotionDiv: React.FC<{}> = ({}) => {
   return (
@@ -7,7 +14,7 @@ const MotionDiv: React.FC<{}> = ({}) => {
       data-scroll
       data-scroll-sticky
       data-scroll-target="#menu-target"
-      animate={{ top: "-100vh", transition: { ...transition, delay: 9 } }}
+      animate={motionDivAnimation}
       className="preloader"
     >
       <div className="preloader__wrapper">
@@ -21,16 +28,14 @@ const MotionDiv: React.FC<{}> = ({}) => {
         </motion.div> */}
         <motion.div
           initial={{ x: 10, opacity: 0 }}
-          animate={{ x: 0, opacity: 1, transition: { ...transition } }}
+          animate={motionDivAnimation2}
           className="preloader__right"
         >
-          <p className="preloader__text">HTML</p>
-          <p className="preloader__text">CSS/SCSS</p>
-          <p className="preloader__text">JAVASCRIPT</p>
-          <p className="preloader__text">TYPESCRIPT</p>
-          <p className="preloader__text">REACT JS</p>
-          <p className="preloader__text">NEXT JS</p>
-          <p className="preloader__text">FRAMER MOTION</p>
+          {motionDivTechStack.map((tech, index) => (
+            <p key={index} className="preloader__text">
+              {tech}
+            </p>
+          ))}
         </motion.div>
       </div>
     </motion.div>
