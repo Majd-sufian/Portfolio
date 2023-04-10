@@ -1,6 +1,13 @@
 import { useRef } from "react";
+
+// Sub Components
+import BlogCard from "./subComponents/BlogCard";
+
+// Framer Motion
 import { useInView } from "framer-motion";
-import { blogs } from "../contants";
+
+// Helpers
+import { getAnimationStyle } from "../helpers";
 
 const Blogs: React.FC<{}> = ({}) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -14,49 +21,13 @@ const Blogs: React.FC<{}> = ({}) => {
       data-scroll-class="blogs-section__bg"
       className="blogs"
     >
-      <div
-        ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-        className="blogs__top"
-      >
+      <div ref={ref} style={getAnimationStyle(isInView)} className="blogs__top">
         <h1 className="heading-1">
           <span>Some Of My Latest Blogs</span>
         </h1>
       </div>
 
-      <div
-        className="blogs__cards"
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-      >
-        {blogs.map(({ title, img, link }) => (
-          <div key={title} className="card">
-            <div className="card__header">
-              <img src={img} alt="card__image" className="card__image" />
-            </div>
-            <div className="card__body">
-              <h4 className="blog__title">{title}</h4>
-              <div className="card__button">
-                <button
-                  className="btn-hover color-7"
-                  onClick={(): void => {
-                    window.open(link, "_blank");
-                  }}
-                >
-                  READ MORE
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <BlogCard isInView={isInView} />
     </section>
   );
 };
