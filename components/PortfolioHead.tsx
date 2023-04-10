@@ -3,39 +3,42 @@ import Head from "next/head";
 const PortfolioHead: React.FC<{}> = ({}) => {
   return (
     <Head>
-      {/* TODO: ADD FAVICON§ */}
-      <link href="/" rel="canonical" />
-      <meta name="theme-color" content="#10101A" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="#10101A" />
-      <title>Majd Sufyan &mdash; Software Devloper</title>
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+        Majd Sufyan | Front-End Developer specializing in React and Next.js
+      </title>
       <meta
         name="description"
-        content="I'm a Front End Software Developer and turning fantisy ideas into real life products is my calling."
+        content="I am Majd Sufyan a front-end developer specializing in React and Next.js. With a passion for turning fantastic ideas into reality, I bring creativity and expertise to every project."
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
-        content="Majd Sufyan 🚀 &mdash; Software Devloper"
+        content="Majd Sufyan | Front-End Developer specializing in React and Next.js"
       />
-      {/* TODO: CHANGE content url */}
-      <meta property="og:url" content="majd-sufyan.site" />
+      <meta property="og:url" content="https://majd-sufyan.site" />
       <meta
         property="og:image"
         content="https://github.com/Majd-sufian/Portfolio/blob/main/public/png/portfolio.png?raw=true"
       />
       <meta
         property="og:description"
-        content="I'm a Front End Software Developer and turning fantisy ideas into real life products is my calling."
+        content="I am Majd Sufyan is a front-end developer specializing in React and Next.js. With a passion for turning fantastic ideas into reality, I bring creativity and expertise to every project."
       />
       <meta
         name="twitter:title"
-        content="Majd Sufyan 🚀 &mdash; Software Devloper"
+        content="Majd Sufyan | Front-End Developer specializing in React and Next.js"
       />
       <meta
         name="twitter:description"
-        content="I'm a Front End Software Developer and turning fantisy ideas into real life products is my calling."
+        content="I am Majd Sufyan is a front-end developer specializing in React and Next.js. With a passion for turning fantastic ideas into reality, I bring creativity and expertise to every project."
       />
-      <meta name="twitter:url" content="/" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:image"
+        content="https://github.com/Majd-sufian/Portfolio/blob/main/public/png/portfolio.png?raw=true"
+      />
     </Head>
   );
 };

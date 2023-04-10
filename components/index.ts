@@ -1,23 +1,25 @@
-import AboutMe from "./AboutMe";
-import Banner from "./Banner";
-import Blogs from "./Blogs";
-import Contact from "./Contact";
-import MotionDiv from "./MotionDiv";
-import Navigation from "./Navigation/Navigation";
 import PortfolioHead from "./PortfolioHead";
+import Audio from "./Audio";
+import MotionDiv from "./MotionDiv";
+import Banner from "./Banner";
+import AboutMe from "./AboutMe";
 import Projects from "./Projects";
-import Skills from "./Skills";
+import Blogs from "./Blogs";
 import Tweets from "./Tweets";
+import Contact from "./Contact";
+// import Navigation from "./Navigation/Navigation";
+// import Skills from "./Skills";
 
 export {
   PortfolioHead,
   MotionDiv,
   Banner,
+  Audio,
   AboutMe,
   Projects,
   Blogs,
-  Contact,
-  Navigation,
-  Skills,
   Tweets,
+  Contact,
+  // Navigation,
+  // Skills,
 };
