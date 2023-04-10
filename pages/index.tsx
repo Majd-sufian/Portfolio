@@ -44,9 +44,9 @@ const index: React.FC<{}> = ({}) => {
       <PortfolioHead />
       {/* <Audio /> */}
       {/* <MotionDiv /> */}
-      <Banner />
+      {/* <Banner /> */}
       <main className="container">
-        <AboutMe />
+        {/* <AboutMe /> */}
         <Projects />
         <Blogs />
         <Tweets />

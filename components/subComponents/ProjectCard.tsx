@@ -1,7 +1,13 @@
-// @ts-nocheck
-import { Project } from "../../types/global";
 import { useRef } from "react";
+
+// Framer Motion
 import { useInView } from "framer-motion";
+
+// Types
+import { Project } from "../../types/global";
+
+// Constants
+import { transition } from "../../contants/Projects";
 
 interface ProjectCardProps {
   project: Project;
@@ -18,19 +24,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     description,
   }: Project = project;
 
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
 
+  const projectSectionStyle = {
+    transform: isInView ? "none" : "translateX(-200px)",
+    opacity: isInView ? 1 : 0,
+    transition,
+  };
+
   return (
-    <div
-      ref={ref}
-      style={{
-        transform: isInView ? "none" : "translateX(-200px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      }}
-      className="project-card"
-    >
+    <div ref={ref} style={projectSectionStyle} className="project-card">
       <div
         className="project-card__left"
         data-displacement="webp/myDistorsionImage.webp"
@@ -40,6 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <img src={media.secondImage.img} alt={media.secondImage.alt} />
         )}
       </div>
+
       <div className="project-card__right">
         <h2
           data-scroll

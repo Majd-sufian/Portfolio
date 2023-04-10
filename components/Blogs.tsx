@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 import { blogs } from "../contants";
 
 const Blogs: React.FC<{}> = ({}) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
 
   return (

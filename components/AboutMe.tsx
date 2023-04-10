@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 
 const AboutMe: React.FC<{}> = ({}) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
 
   return (
