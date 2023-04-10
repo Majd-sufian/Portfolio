@@ -1,5 +1,9 @@
 import { useMemo } from "react";
-import { tweets } from "../contants";
+
+// Constants
+import { tweets } from "../contants/Tweets";
+
+// Types
 import { Tweet } from "../types/global";
 
 const Tweets = () => {

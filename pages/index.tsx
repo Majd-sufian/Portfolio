@@ -48,7 +48,7 @@ const index: React.FC<{}> = ({}) => {
       <main className="container">
         {/* <AboutMe /> */}
         {/* <Projects /> */}
-        <Blogs />
+        {/* <Blogs /> */}
         <Tweets />
         <Contact />
       </main>
