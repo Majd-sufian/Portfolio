@@ -540,7 +540,7 @@
     }
 
     .card__body {
-      height: 20rem;
+      height: 24rem;
       padding: 1rem;
       display: flex;
       flex-direction: column;
@@ -575,6 +575,7 @@
       .card__button {
         width: 100%;
         text-align: center;
+        // margin-bottom: 2rem;
 
         .btn-hover:hover {
           background-position: 100% 0;
