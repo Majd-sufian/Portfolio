@@ -1,6 +1,24 @@
 import { Project } from "../types/global";
 
 const projects: Array<Project> = [
+  // Three JS
+  {
+    firstName: "3D Products Design",
+    secondName: "",
+    tectStack: "VITE - REACT JS - TYPESCRIPT - OPEN AI API - DALL·E 2",
+    description:
+      "An application that lets users design their own t-shirts in 3D, add images, and generate custom designs with AI.",
+    media: {
+      firstImage: {
+        img: "gif/3dProducts.gif",
+        alt: "3D Product Design/Showcase",
+      },
+    },
+    dataScrollClass: "safarika-anim",
+    social: {
+      link: "https://threejs-products.com",
+    },
+  },
   // NFT
   {
     firstName: "NFT Market Place",
@@ -29,8 +47,7 @@ const projects: Array<Project> = [
     firstName: "Circle Branding Agency",
     secondName: "",
     tectStack: "WORDPRESS",
-    description: "",
-    // "Created a mobile app (Android & IOS) with React Native and a showcase landing page with Typescript & React for the NFT marketplace.",
+    description: "Home page for Circle Branding Agency.",
     media: {
       firstImage: {
         img: "png/circleLogo.png",
@@ -42,13 +59,29 @@ const projects: Array<Project> = [
       link: "https://circlexpr.com/",
     },
   },
+  // AWAKE Mobility
+  {
+    firstName: "AWAKE Mobility",
+    secondName: "",
+    tectStack: "WIX",
+    description: "Home Page for AWAKE Mobility.",
+    media: {
+      firstImage: {
+        img: "png/awakeMobility2.jpeg",
+        alt: "Circle LOGO",
+      },
+    },
+    dataScrollClass: "safarika-anim",
+    social: {
+      link: "https://www.awakemobility.de/",
+    },
+  },
   // Conventic
   {
     firstName: "CONVENTIC.COM",
     secondName: "",
     tectStack: "GASTBY JS - REACT JS - TYPESCRIPT - EMOTION",
-    description: "",
-    // "Created a mobile app (Android & IOS) with React Native and a showcase landing page with Typescript & React for the NFT marketplace.",
+    description: "Home page for Conventic.",
     media: {
       firstImage: {
         img: "png/conventicLogo2.png",
@@ -138,7 +171,7 @@ const projects: Array<Project> = [
     description: "",
     media: {
       firstImage: {
-        img: "png/youtubeLogo.png",
+        img: "webp/youtube.webp",
         alt: "Youtube clone",
       },
       secondImage: {
