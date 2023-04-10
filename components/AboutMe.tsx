@@ -1,20 +1,17 @@
 import { useRef } from "react";
+
+// Framer Motion
 import { useInView } from "framer-motion";
+
+// Helpers
+import { getAnimationStyle } from "../helpers";
 
 const AboutMe: React.FC<{}> = ({}) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
 
   return (
-    <p
-      ref={ref}
-      style={{
-        transform: isInView ? "none" : "translateX(-200px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      }}
-      className="about-text"
-    >
+    <p ref={ref} style={getAnimationStyle(isInView)} className="about-text">
       Hello stranger! 👋, my name is Majd and I am a software developer, <br />{" "}
       passionate about digital products that help people experience everyday
       life, not endure it.

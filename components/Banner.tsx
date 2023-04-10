@@ -1,6 +1,5 @@
 // SubComponents
-import SocialMediaLinks from "./subComponents/SocialMediaLinks";
-import Speaker from "./subComponents/Speaker";
+import { Speaker, SocialMediaLinks } from "./subComponents";
 
 const Banner: React.FC<{}> = ({}) => {
   return (

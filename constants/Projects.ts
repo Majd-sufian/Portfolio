@@ -1,7 +1,5 @@
 import { Project } from "../types/global";
 
-const transition = "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s";
-
 const projects: Array<Project> = [
   // NFT
   {
@@ -178,4 +176,4 @@ const projects: Array<Project> = [
   },
 ];
 
-export { transition, projects };
+export { projects };

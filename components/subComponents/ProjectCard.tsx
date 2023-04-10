@@ -7,7 +7,7 @@ import { useInView } from "framer-motion";
 import { Project } from "../../types/global";
 
 // Constants
-import { transition } from "../../contants/Projects";
+import { transition } from "../../constants/Projects";
 
 interface ProjectCardProps {
   project: Project;

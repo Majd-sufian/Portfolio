@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 
 // Constants
-import { tweets } from "../contants/Tweets";
+import { tweets } from "../constants/Tweets";
 
 // Types
 import { Tweet } from "../types/global";

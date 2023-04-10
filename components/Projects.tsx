@@ -1,29 +1,26 @@
 import { useRef } from "react";
 
+// Sub Components
+import { ProjectCard } from "./subComponents";
+
 // Framer Motion
 import { useInView } from "framer-motion";
 // Types
 import { Project } from "../types/global";
 
-// Sub Components
-import ProjectCard from "./subComponents/ProjectCard";
+// Helpers
+import { getAnimationStyle } from "../helpers";
 
 // Constants
-import { projects, transition } from "../contants/Projects";
+import { projects } from "../constants/Projects";
 
 const Projects: React.FC<{}> = ({}) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
 
-  const projectsSectionStyle = {
-    transform: isInView ? "none" : "translateX(-200px)",
-    opacity: isInView ? 1 : 0,
-    transition,
-  };
-
   return (
     <section id="sectionProjects" className="section-projects">
-      <section ref={ref} style={projectsSectionStyle}>
+      <section ref={ref} style={getAnimationStyle(isInView)}>
         <h1 className="heading-1">
           <span>Yeah, I work hard </span> <small>💼</small>
         </h1>

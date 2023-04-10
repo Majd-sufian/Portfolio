@@ -1,4 +1,5 @@
-import { socialLinks } from "../../contants";
+// Constants
+import { socialLinks } from "../../constants/socialLinks";
 
 interface SocialMediaLinksProps {
   shortOrFull: "short" | "full";

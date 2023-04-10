@@ -6,7 +6,7 @@ import {
   motionDivAnimation,
   motionDivAnimation2,
   motionDivTechStack,
-} from "../contants/MotionDivAnimation";
+} from "../constants/MotionDivAnimation";
 
 const MotionDiv: React.FC<{}> = ({}) => {
   return (

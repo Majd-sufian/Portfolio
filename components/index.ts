@@ -7,8 +7,6 @@ import Projects from "./Projects";
 import Blogs from "./Blogs";
 import Tweets from "./Tweets";
 import Contact from "./Contact";
-// import Navigation from "./Navigation/Navigation";
-// import Skills from "./Skills";
 
 export {
   PortfolioHead,
@@ -20,6 +18,4 @@ export {
   Blogs,
   Tweets,
   Contact,
-  // Navigation,
-  // Skills,
 };

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 // Sub Components
-import BlogCard from "./subComponents/BlogCard";
+import { BlogCard } from "./subComponents";
 
 // Framer Motion
 import { useInView } from "framer-motion";

@@ -1,10 +1,10 @@
-import { Fragment, useRef } from "react";
+import { useRef } from "react";
 
 // Framer Motion
 import { useInView } from "framer-motion";
 
 // Sub Components
-import SocialMediaLinks from "./subComponents/SocialMediaLinks";
+import { SocialMediaLinks } from "./subComponents";
 
 // Helpers
 import { getAnimationStyle } from "../helpers";

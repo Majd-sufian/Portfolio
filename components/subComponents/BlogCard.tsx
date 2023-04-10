@@ -1,5 +1,8 @@
-import { blogs } from "../../contants";
+// Helpers
 import { getAnimationStyle } from "../../helpers";
+
+// Constants
+import { blogs } from "../../constants/Blogs";
 
 interface BlogCardProps {
   isInView: boolean;
