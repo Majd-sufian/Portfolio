@@ -294,13 +294,16 @@
   }
 
   p {
-    margin-bottom: 15rem;
     margin-top: 2rem;
+  }
+
+  .project-card:first-of-type {
+    margin-top: 8rem;
   }
 
   .project-card {
     width: 100%;
-    margin: 20rem auto;
+    margin: 10rem auto;
     background: linear-gradient(
       180deg,
       rgba(35, 37, 49, 0.5) 0%,
