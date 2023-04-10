@@ -34,21 +34,21 @@ const blogs: Array<Blogs> = [
     img: "gif/google.gif",
   },
   // json
-  // {
-  //   title: "One Tool to view your Json better 👨‍💻",
-  //   description:
-  //     "𝐉𝐬𝐨𝐧𝐂𝐫𝐚𝐜𝐤 generates graph diagrams from JSON files and makes them easy to read. Additionally, the generated diagrams can be downloaded as images.",
-  //   link: "https://medium.com/@majdnewsufian/one-tool-to-view-your-json-better-1cce7b3633c3",
-  //   img: "png/json.png",
-  // },
+  {
+    title: "One Tool to view your Json better 👨‍💻",
+    description:
+      "𝐉𝐬𝐨𝐧𝐂𝐫𝐚𝐜𝐤 generates graph diagrams from JS ON files and makes them easy to read. Additionally, the generated diagrams can be downloaded as images.",
+    link: "https://medium.com/@majdnewsufian/one-tool-to-view-your-json-better-1cce7b3633c3",
+    img: "png/json.png",
+  },
   // grepper
-  // {
-  //   title: "One tool can save time when googling ⏲",
-  //   description:
-  //     "Whenever you search online for anything related to programming, if it has an answer to your search, it displays snippets of code or information based on what you have searched.",
-  //   link: "https://medium.com/@majdnewsufian/one-tool-can-save-time-when-googling-2366062430a6",
-  //   img: "png/grepper.png",
-  // },
+  {
+    title: "One tool can save time when googling ⏲",
+    description:
+      "Whenever you search online for anything related to programming, if it has an answer to your search, it displays snippets of code or information based on what you have searched.",
+    link: "https://medium.com/@majdnewsufian/one-tool-can-save-time-when-googling-2366062430a6",
+    img: "png/grepper.png",
+  },
 ];
 
 export { blogs };

@@ -42,11 +42,11 @@ const index: React.FC<{}> = ({}) => {
   return (
     <div id="menu-target" data-scroll-container ref={refScroll}>
       <PortfolioHead />
-      {/* <Audio /> */}
-      {/* <MotionDiv /> */}
-      {/* <Banner /> */}
+      <Audio />
+      <MotionDiv />
+      <Banner />
       <main className="container">
-        {/* <AboutMe /> */}
+        <AboutMe />
         <Projects />
         <Blogs />
         <Tweets />
