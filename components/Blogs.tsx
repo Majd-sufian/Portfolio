@@ -37,7 +37,7 @@ const Blogs: React.FC<{}> = ({}) => {
         }}
       >
         {blogs.map(({ title, img, link }) => (
-          <div className="card">
+          <div key={title} className="card">
             <div className="card__header">
               <img src={img} alt="card__image" className="card__image" />
             </div>

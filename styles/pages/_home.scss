@@ -346,8 +346,8 @@
     }
 
     &__left {
-      flex: 1;
       height: 36rem;
+      width: 50rem;
       background-size: cover;
       position: relative;
       border-radius: 5.3rem;
@@ -361,13 +361,6 @@
       @media only screen and (max-width: 30em) {
         width: 100%;
         border-radius: 3rem;
-      }
-
-      canvas {
-        position: initial;
-        z-index: 0;
-        width: 100% !important;
-        height: 100% !important;
       }
 
       img {
@@ -528,6 +521,7 @@
     }
 
     .card {
+      border: 0.2rem solid #20222e;
       display: flex;
       flex-direction: column;
       max-width: 400px;
