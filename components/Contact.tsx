@@ -1,6 +1,13 @@
-import SocialMediaLinks from "./subComponents/SocialMediaLinks";
-import { useRef } from "react";
+import { Fragment, useRef } from "react";
+
+// Framer Motion
 import { useInView } from "framer-motion";
+
+// Sub Components
+import SocialMediaLinks from "./subComponents/SocialMediaLinks";
+
+// Helpers
+import { getAnimationStyle } from "../helpers";
 
 const Contact: React.FC<{}> = ({}) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -10,11 +17,7 @@ const Contact: React.FC<{}> = ({}) => {
     <>
       <section
         ref={ref}
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
+        style={getAnimationStyle(isInView)}
         className="section-contact"
       >
         <h1 className="heading-1">
@@ -32,8 +35,9 @@ const Contact: React.FC<{}> = ({}) => {
           .
         </h2>
       </section>
+
       {/* Footer Text 2 section & Social media */}
-      <section className="section-socials">
+      <section className="section-socials" style={getAnimationStyle(isInView)}>
         <h1 className="heading-1">
           <span>Dont be a stranger!</span> <small>👋</small>
         </h1>
