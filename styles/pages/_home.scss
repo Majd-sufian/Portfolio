@@ -226,16 +226,7 @@
         &__top {
           @include centerContent;
           margin-bottom: 3rem;
-          // &--left {
-          // }
-          // &--right {
-          //   img {
-          //   }
-          // }
         }
-
-        // &__bottom {
-        // }
 
         &__p {
           font-size: 0.8rem;
@@ -319,26 +310,16 @@
     position: relative;
 
     @media only screen and (max-width: 57em) {
-      width: 70%;
       border-radius: 6.3rem;
       flex-direction: column;
     }
     @media only screen and (max-width: 40em) {
-      width: 75%;
     }
     @media only screen and (max-width: 35em) {
-      width: 80%;
     }
     @media only screen and (max-width: 30em) {
       padding: 4rem;
-      width: 84%;
       border-radius: 4.3rem;
-    }
-    @media only screen and (max-width: 23em) {
-      width: 90%;
-    }
-    @media only screen and (max-width: 22em) {
-      width: 100%;
     }
 
     &::before {
@@ -363,45 +344,8 @@
     a {
       color: #57a3c7;
     }
-    // &::before {
-    //   background-image: url("../../public/svg/03.svg");
-    // }
-
-    // &:nth-of-type(1) {
-    //   a {
-    //     color: #6b9796;
-    //   }
-    //   &::before {
-    //     background-image: url("../../public/svg/01.svg");
-    //   }
-    // }
-    // &:nth-of-type(2) {
-    //   a {
-    //     color: #e6972f;
-    //   }
-    //   &::before {
-    //     background-image: url("../../public/svg/02.svg");
-    //   }
-    // }
-    // &:nth-of-type(3) {
-    //   a {
-    //     color: #57a3c7;
-    //   }
-    //   &::before {
-    //     background-image: url("../../public/svg/03.svg");
-    //   }
-    // }
-    // &:nth-of-type(4) {
-    //   a {
-    //     color: #c08af1;
-    //   }
-    //   &::before {
-    //     background-image: url("../../public/svg/04.svg");
-    //   }
-    // }
 
     &__left {
-      // width: 100%;
       flex: 1;
       height: 36rem;
       background-size: cover;
@@ -421,7 +365,6 @@
 
       canvas {
         position: initial;
-        // border-radius: inherit !important;
         z-index: 0;
         width: 100% !important;
         height: 100% !important;
@@ -438,7 +381,6 @@
         }
 
         &:nth-child(1) {
-          // position: absolute;
           top: 0;
           left: 0;
           opacity: 1;
