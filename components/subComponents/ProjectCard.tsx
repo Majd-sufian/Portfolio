@@ -1,13 +1,13 @@
 import { useRef } from "react";
 
+// Helpers
+import { getAnimationStyle } from "../../helpers";
+
 // Framer Motion
 import { useInView } from "framer-motion";
 
 // Types
 import { Project } from "../../types/global";
-
-// Constants
-import { transition } from "../../constants/Projects";
 
 interface ProjectCardProps {
   project: Project;
@@ -27,14 +27,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
 
-  const projectSectionStyle = {
-    transform: isInView ? "none" : "translateX(-200px)",
-    opacity: isInView ? 1 : 0,
-    transition,
-  };
-
   return (
-    <div ref={ref} style={projectSectionStyle} className="project-card">
+    <div ref={ref} style={getAnimationStyle(isInView)} className="project-card">
       <div
         className="project-card__left"
         data-displacement="webp/myDistorsionImage.webp"
