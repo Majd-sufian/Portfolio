@@ -27,7 +27,7 @@ const Contact: React.FC<{}> = ({}) => {
           Thanks for stopping by, I’m currently looking to join a new team of
           creative designers and developers. If you think we might be a good fit
           for one another, give me a
-          <a href="tel:+972527239826"> call 📞 &nbsp;</a>
+          <a href="tel:+4917620481700"> call 📞 &nbsp;</a>
           or send me an
           <a href="majdnewsufian@gmail.com" rel="noopener" target="_blank">
             &nbsp; email 📧
