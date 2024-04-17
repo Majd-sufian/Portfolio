@@ -1,6 +1,6 @@
 # Majd Sufyan
 
-Second version of my portfolio
+Personal Portofolio
 
 Tech stack:
 
