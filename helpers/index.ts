@@ -46,7 +46,6 @@ const initImageHoverEffect = () => {
 
 const initLocomotiveScroll = (lscroll: { update: () => void }) => {
   window.addEventListener("load", () => {
-    let image = document.querySelector("img");
     lscroll.update();
   });
 };

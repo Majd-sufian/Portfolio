@@ -9,7 +9,7 @@ const clientsProjects: Array<Project> = [
       "Landing page for Rocket Tutor, a platform that connects students with tutors.",
     media: {
       firstImage: {
-        img: "png/rocket.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/rocket.png",
         alt: "Rocket LOGO",
       },
     },
@@ -26,11 +26,11 @@ const clientsProjects: Array<Project> = [
       "Students platform that connects students with tutors and enables them to book lessons, view their progress, and more.",
     media: {
       firstImage: {
-        img: "png/rocket-student.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/rocket-student.png",
         alt: "Rokcet LOGO",
       },
       secondImage: {
-        img: "png/rocket-student-2.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/rocket-student-2.png",
         alt: "Rokcet LOGO",
       },
     },
@@ -47,11 +47,11 @@ const clientsProjects: Array<Project> = [
       "Teacher platform that connects teachers with students and enables them to manage their lessons, assign homework, and more.",
     media: {
       firstImage: {
-        img: "png/rocket-teacher.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/rocket-teacher.png",
         alt: "Rocket LOGO",
       },
       secondImage: {
-        img: "png/rocket-teacher-2.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/rocket-teacher-2.png",
         alt: "Rocket LOGO",
       },
     },
@@ -69,11 +69,11 @@ const clientsProjects: Array<Project> = [
       "Mobile application (Android - IOS) for bus drivers to enable them to report faults and accidents in real-time to AWAKE Mobility Dashboard",
     media: {
       firstImage: {
-        img: "png/awakeMobility.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/awakeMobility.png",
         alt: "Awake App",
       },
       secondImage: {
-        img: "png/awakeMobility2.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/awakeMobility2.png",
         alt: "Awake App",
       },
     },
@@ -91,7 +91,7 @@ const clientsProjects: Array<Project> = [
       "WYR is an app that lets users play the “Would You Rather?” game.",
     media: {
       firstImage: {
-        img: "png/wyr.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/wyr.png",
         alt: "Would You Rather game",
       },
     },
@@ -108,7 +108,7 @@ const clientsProjects: Array<Project> = [
     description: "A News app, controlled and navigated via voice.",
     media: {
       firstImage: {
-        img: "png/news-reader-ai.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/news-reader-ai.png",
         alt: "news reader",
       },
     },
@@ -126,7 +126,7 @@ const clientsProjects: Array<Project> = [
     description: "Home page for Circle Branding Agency.",
     media: {
       firstImage: {
-        img: "png/circle.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/circle.png",
         alt: "Circle LOGO",
       },
     },
@@ -143,11 +143,11 @@ const clientsProjects: Array<Project> = [
       "A web application that generates a Book for Nutrition Plans with a push button based on the user's status (health, active level, age, weight, medical history, and more",
     media: {
       firstImage: {
-        img: "png/invikoo.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/invikoo.png",
         alt: "Invikoo LOGO",
       },
       secondImage: {
-        img: "png/invikoo2.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/invikoo2.png",
         alt: "Invikoo LOGO",
       },
     },
@@ -168,7 +168,7 @@ const personalProjects: Array<Project> = [
       "An application that lets users design their own t-shirts in 3D, add images, and generate custom designs with AI.",
     media: {
       firstImage: {
-        img: "gif/3dProducts.gif",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/3dProducts.gif",
         alt: "3D Product Design/Showcase",
       },
     },
@@ -186,11 +186,11 @@ const personalProjects: Array<Project> = [
       "Created a mobile app (Android & IOS) with React Native and a showcase landing page with Typescript & React for the NFT marketplace.",
     media: {
       firstImage: {
-        img: "png/Nft.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/nft.png",
         alt: "Nft clone",
       },
       secondImage: {
-        img: "png/Nft2.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/nft2.png",
         alt: "Nft",
       },
     },
@@ -208,7 +208,7 @@ const personalProjects: Array<Project> = [
     tectStack: "TYPESCRIPT - REACT - TAILWIND",
     media: {
       firstImage: {
-        img: "png/hoo2.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/hoo2.png",
         alt: "Hoobank",
       },
     },
@@ -226,7 +226,7 @@ const personalProjects: Array<Project> = [
     description: "",
     media: {
       firstImage: {
-        img: "png/youtube.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/youtube.png",
         alt: "Youtube clone",
       },
     },
@@ -244,7 +244,7 @@ const personalProjects: Array<Project> = [
     description: "",
     media: {
       firstImage: {
-        img: "png/netflix.png",
+        img: "https://me-portfolio.s3.eu-central-1.amazonaws.com/netflix.png",
         alt: "netflix",
       },
     },
