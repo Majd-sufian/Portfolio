@@ -24,7 +24,7 @@ const index: React.FC<{}> = ({}) => {
   const refScroll = useRef(null);
 
   useEffect(() => {
-    if (!refScroll.current) return;
+    if (!refScroll.current) return undefined;
 
     lscroll = new locomotiveScroll({
       el: refScroll.current,
@@ -36,6 +36,11 @@ const index: React.FC<{}> = ({}) => {
 
     initLocomotiveScroll(lscroll);
     initConsoleLogs();
+
+    return () => {
+      lscroll?.destroy();
+      lscroll = null;
+    };
   }, []);
 
   return (
