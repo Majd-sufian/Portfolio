@@ -13,7 +13,7 @@ export interface Project {
   description: string;
   dataScrollClass: string;
   firstName: string;
-  secondName: string;
+  secondName?: string;
   social: {
     link: string;
     github?: string;

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 
 // Sub Components
 import { ProjectCard } from "./subComponents";
@@ -12,7 +12,11 @@ import { Project } from "../types/global";
 import { getAnimationStyle } from "../helpers";
 
 // Constants
-import { projects, ProjectType } from "../constants/Projects";
+import {
+  clientsProjects,
+  personalProjects,
+  ProjectType,
+} from "../constants/Projects";
 import ProjectTypes from "./subComponents/ProjectTypes";
 
 const Projects: React.FC<{}> = ({}) => {
@@ -20,6 +24,12 @@ const Projects: React.FC<{}> = ({}) => {
   const isInView = useInView(ref, { once: true });
   const [currentProjectType, setCurrentProjectType] =
     useState<ProjectType>("Clients");
+
+  const currentProjects = useMemo(() => {
+    return currentProjectType === "Clients"
+      ? clientsProjects
+      : personalProjects;
+  }, [currentProjectType]);
 
   return (
     <section id="sectionProjects" className="section-projects">
@@ -37,7 +47,7 @@ const Projects: React.FC<{}> = ({}) => {
         setCurrentProjectType={setCurrentProjectType}
       />
 
-      {projects.map((project: Project, i) => (
+      {currentProjects.map((project: Project, i) => (
         <ProjectCard project={project} key={i} />
       ))}
     </section>
