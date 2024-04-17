@@ -1,10 +1,10 @@
 import { Project } from "../types/global";
 
 const clientsProjects: Array<Project> = [
-  // Rocket Tutor - Clients
+  // Rocket Landing - Clients
   {
     firstName: "Rocket Tutor - Landing Page",
-    tectStack: "NODE - NEXT - MONOGDB - PRISMA - AWS",
+    tectStack: "NEXT - TS",
     description:
       "Landing page for Rocket Tutor, a platform that connects students with tutors.",
     media: {
@@ -18,11 +18,12 @@ const clientsProjects: Array<Project> = [
       link: "https://rockettutor.de/",
     },
   },
+  // Rocket Tutor - Students
   {
-    firstName: "Rocket Tutor - Students Dashboard",
-    tectStack: "NODE - NEXT - MONOGDB - PRISMA - AWS",
+    firstName: "Rocket Tutor - Students Platform",
+    tectStack: "NODE - REACT - TS - MONOGDB - PRISMA - AWS",
     description:
-      "Students Dashboard that connects students with tutors and enables them to book lessons, view their progress, and more.",
+      "Students platform that connects students with tutors and enables them to book lessons, view their progress, and more.",
     media: {
       firstImage: {
         img: "png/rocket-student.png",
@@ -38,11 +39,12 @@ const clientsProjects: Array<Project> = [
       link: "https://app.rockettutor.de/",
     },
   },
+  // Rocket Teacher - Clients
   {
-    firstName: "Rocket Tutor - Teacher Dashboard",
-    tectStack: "NODE - NEXT - MONOGDB - PRISMA - AWS",
+    firstName: "Rocket Tutor - Teacher Platform",
+    tectStack: "NODE - REACT - TS - MONOGDB - PRISMA - AWS",
     description:
-      "Teacher Dashboard that connects teachers with students and enables them to manage their lessons, assign homework, and more.",
+      "Teacher platform that connects teachers with students and enables them to manage their lessons, assign homework, and more.",
     media: {
       firstImage: {
         img: "png/rocket-teacher.png",
@@ -56,27 +58,6 @@ const clientsProjects: Array<Project> = [
     dataScrollClass: "safarika-anim",
     social: {
       link: "https://app.rockettutor.de/",
-    },
-  },
-  // invikoo - Clients
-  {
-    firstName: "Invikoo.de",
-    tectStack: "NODE - NEXT - MONOGDB - AWS - REACT - STRIPE",
-    description:
-      "A web application that generates a Book for Nutrition Plans with a push button based on the user's status (health, active level, age, weight, medical history, and more",
-    media: {
-      firstImage: {
-        img: "png/invikoo.png",
-        alt: "Invikoo LOGO",
-      },
-      secondImage: {
-        img: "png/invikoo2.png",
-        alt: "Invikoo LOGO",
-      },
-    },
-    dataScrollClass: "safarika-anim",
-    social: {
-      link: "https://invikoo.de/",
     },
   },
   // AWAKE Mobility - Clients
@@ -101,23 +82,6 @@ const clientsProjects: Array<Project> = [
       link: "https://www.awakemobility.de/use-case-better-availability-planning",
     },
   },
-  // Conventic - Clients
-  {
-    firstName: "CONVENTIC.COM",
-    secondName: "",
-    tectStack: "GASTBY JS - REACT JS - TYPESCRIPT - EMOTION",
-    description: "Home page for Conventic.",
-    media: {
-      firstImage: {
-        img: "png/conventicLogo.png",
-        alt: "conventicLogo",
-      },
-    },
-    dataScrollClass: "safarika-anim",
-    social: {
-      link: "https://www.conventic.com/",
-    },
-  },
   // WYR - Clients
   {
     firstName: "WYR Game",
@@ -127,10 +91,6 @@ const clientsProjects: Array<Project> = [
       "WYR is an app that lets users play the “Would You Rather?” game.",
     media: {
       firstImage: {
-        img: "png/WYRLogo2.png",
-        alt: "Would You Rather game",
-      },
-      secondImage: {
         img: "png/wyr.png",
         alt: "Would You Rather game",
       },
@@ -144,14 +104,10 @@ const clientsProjects: Array<Project> = [
   {
     firstName: "News",
     secondName: "Reader Ai",
-    tectStack: "REACT - JS - ALAN AI - MATERIAL UI",
+    tectStack: "REACT - ALAN AI - MATERIAL UI",
     description: "A News app, controlled and navigated via voice.",
     media: {
       firstImage: {
-        img: "png/alan.png",
-        alt: "news reader",
-      },
-      secondImage: {
         img: "png/news-reader-ai.png",
         alt: "news reader",
       },
@@ -177,6 +133,27 @@ const clientsProjects: Array<Project> = [
     dataScrollClass: "safarika-anim",
     social: {
       link: "https://circlexpr.com/",
+    },
+  },
+  // invikoo - Clients
+  {
+    firstName: "Invikoo.de",
+    tectStack: "NODE - NEXT - MONOGDB - AWS - REACT - STRIPE",
+    description:
+      "A web application that generates a Book for Nutrition Plans with a push button based on the user's status (health, active level, age, weight, medical history, and more",
+    media: {
+      firstImage: {
+        img: "png/invikoo.png",
+        alt: "Invikoo LOGO",
+      },
+      secondImage: {
+        img: "png/invikoo2.png",
+        alt: "Invikoo LOGO",
+      },
+    },
+    dataScrollClass: "safarika-anim",
+    social: {
+      link: "https://invikoo.de/",
     },
   },
 ];
@@ -231,10 +208,6 @@ const personalProjects: Array<Project> = [
     tectStack: "TYPESCRIPT - REACT - TAILWIND",
     media: {
       firstImage: {
-        img: "svg/hooBankLogo.svg",
-        alt: "Hoobank",
-      },
-      secondImage: {
         img: "png/hoo2.png",
         alt: "Hoobank",
       },
@@ -253,12 +226,8 @@ const personalProjects: Array<Project> = [
     description: "",
     media: {
       firstImage: {
-        img: "webp/youtube.webp",
-        alt: "Youtube clone",
-      },
-      secondImage: {
         img: "png/youtube.png",
-        alt: "Youtube",
+        alt: "Youtube clone",
       },
     },
     dataScrollClass: "safarika-anim",
@@ -275,12 +244,8 @@ const personalProjects: Array<Project> = [
     description: "",
     media: {
       firstImage: {
-        img: "png/NetflixLogo.png",
-        alt: "netflix",
-      },
-      secondImage: {
         img: "png/netflix.png",
-        alt: "netflix logo",
+        alt: "netflix",
       },
     },
     dataScrollClass: "safarika-anim",
