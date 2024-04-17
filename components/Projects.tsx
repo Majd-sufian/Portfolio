@@ -29,6 +29,13 @@ const Projects: React.FC<{}> = ({}) => {
         </p>
       </section>
 
+      <div className="project-buttons">
+        <div className="buttons-container">
+          <button className="project-btn active">Clients</button>
+          <button className="project-btn">Personal</button>
+        </div>
+      </div>
+
       {projects.map((project: Project, i) => (
         <ProjectCard project={project} key={i} />
       ))}
