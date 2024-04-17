@@ -2,7 +2,6 @@ import { useRef, useEffect } from "react";
 // Component
 import {
   PortfolioHead,
-  MotionDiv,
   Banner,
   Audio,
   AboutMe,
@@ -43,7 +42,6 @@ const index: React.FC<{}> = ({}) => {
     <div id="menu-target" data-scroll-container ref={refScroll}>
       <PortfolioHead />
       <Audio />
-      <MotionDiv />
       <Banner />
       <main className="container">
         <AboutMe />
