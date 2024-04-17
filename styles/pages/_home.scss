@@ -315,8 +315,8 @@
       min-height: 60px;
       min-width: 0;
       appearance: none;
-      background-color: #ffffff;
-      color: #111827;
+      background-color: #222;
+      color: #ffffff;
       border: 2px solid #1a1a1a;
       box-sizing: border-box;
       cursor: pointer;
@@ -333,8 +333,8 @@
     }
 
     .active {
-      background-color: #222;
-      color: #ffffff;
+      background-color: #ffffff;
+      color: #111827;
     }
   }
 

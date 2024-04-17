@@ -209,4 +209,8 @@ const projects: Array<Project> = [
   },
 ];
 
-export { projects };
+export type ProjectType = "Clients" | "Personal";
+
+const projectTypes: ProjectType[] = ["Clients", "Personal"];
+
+export { projects, projectTypes };
