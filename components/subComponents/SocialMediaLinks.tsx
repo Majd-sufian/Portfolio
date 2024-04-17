@@ -12,7 +12,7 @@ const SocialMediaLinks: React.FC<SocialMediaLinksProps> = ({
     <>
       {socialLinks.map(({ name, link, fullName, icon }, i) => (
         <a key={i} href={link} rel="noopener" target="_blank">
-          {icon} {shortOrFull === "short" ? name : fullName}
+          {icon} ‎ {shortOrFull === "short" ? name : fullName}
         </a>
       ))}
     </>
